@@ -434,10 +434,62 @@
             display: block;
             margin: 10px 0;
         }
-    </style>
+        /* Return to the current professional portfolio. */
+    
+        #portfolio-return {
+            
+            position: fixed;
+            
+            left: max(12px, env(safe-area-inset-left));
+            
+            top: 50%;
+            
+            transform: translateY(-50%);
+            
+            z-index: 1100;
+            
+            width: 142px;
+            
+            padding: 14px 10px;
+            
+            border: 2px solid var(--bright-yellow);
+            
+            background: var(--black);
+            
+            color: var(--bright-yellow);
+            
+            box-shadow: 4px 4px 0 var(--blue);
+            
+            font-size: 10px;
+            
+            line-height: 1.7;
+            
+            text-align: center;
+            
+            text-decoration: none;
+            
+        }
+    
+        #portfolio-return:hover,
+    
+        #portfolio-return:focus-visible {
+            
+            background: var(--bright-yellow);
+            
+            color: var(--black);
+            
+            outline: 2px solid var(--bright-white);
+            
+            outline-offset: 4px;
+            
+        }
+    
+        @media(max-width:1220px){#portfolio-return{top:10px;transform:none;width:auto;padding:11px 12px;font-size:9px}#game-container{height:calc(95vh - 60px);height:calc(95dvh - 60px);margin-top:60px}}</style>
 </head>
 
 <body>
+    
+<a id="portfolio-return" href="https://xescotejedor.es" aria-label="Hablemos en serio: volver al portfolio profesional">Hablemos en serio</a>
     <div id="game-container">
         <div id="splash" class="screen active">
             <div class="content" style="display:flex; flex-direction:column;">
